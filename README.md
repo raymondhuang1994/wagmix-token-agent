@@ -50,4 +50,6 @@ scripts/sync-v17.mjs Rebuild and sync the preserved V17 pages
 
 Run `npm run sync:v17` after changes to `reference-v17/`; it rebuilds the bilingual original pages and copies their assets and PDFs into `public/`. Content in the native landing page is sourced from the same V17 configuration and content map where possible; the remaining approved homepage copy is in `data/home.ts`.
 
+To produce offline HTML files, run `npm run export:html`. The result is in `output/`: two self-contained landing page HTML files plus `legacy/` pages and `downloads/` PDFs for their deep links. Open either landing HTML directly in a browser, keeping those folders beside it.
+
 The V17 geolocation restriction is still a labeled demonstration, as described in `reference-v17/GEO_ACCESS.md`. Public source and files remain accessible; production enforcement requires server-side integration.

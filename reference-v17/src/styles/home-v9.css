@@ -1,0 +1,46 @@
+.product-emblem{display:block;width:100%;height:100%;overflow:visible}
+.v9-home-products{padding-top:90px;padding-bottom:90px}
+/* Both products share one banner layout; the themes only change colour. */
+.v14-product-banners{display:grid;grid-template-columns:minmax(0,1fr);grid-auto-rows:1fr;gap:20px}
+.v14-product-banner{--banner-ink:#f5f8ff;--banner-muted:#b8c8de;--banner-accent:#b8d1ff;--banner-line:#607ba6;position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:30px;min-height:410px;padding:50px 60px;border:1px solid #2b4070;border-radius:30px;overflow:hidden;text-decoration:none;color:var(--banner-ink);background:radial-gradient(ellipse at 86% 42%,#203d7c 0%,#111d37 34%,#080d18 75%);transition:border-color .25s,box-shadow .25s}
+.v14-product-banner-light{--banner-ink:#132e4f;--banner-muted:#48647e;--banner-accent:#275b8f;--banner-line:#98b5cf;border-color:#cfdeed;background:radial-gradient(ellipse at 86% 42%,#d7e8ff 0%,#edf5ff 38%,#f4f8fc 75%)}
+.v14-product-banner:hover{border-color:#719cff;box-shadow:0 18px 60px #193f6828}
+.v14-product-banner:focus-visible{outline:3px solid #086be8;outline-offset:5px}
+.v14-product-copy{position:relative;z-index:1;min-width:0}
+.v14-product-status{display:inline-block;color:var(--banner-accent);font-size:11px;letter-spacing:.1em;border-bottom:1px solid var(--banner-line);padding-bottom:10px}
+.v14-product-copy h3{color:var(--banner-ink);font-size:clamp(28px,3vw,43px);line-height:1.2;letter-spacing:-.035em;margin:24px 0 14px}
+.v14-product-copy .v14-product-name{color:var(--banner-muted);font-size:15px;line-height:1.8;min-height:3.6em;max-width:480px;margin:0}
+.v14-product-network{display:flex;align-items:center;gap:8px;min-height:24px;margin:18px 0 24px;font-size:13px;line-height:1.7;color:var(--banner-accent)}
+.v14-product-network svg{width:22px;height:22px;flex:none}
+.v14-product-link{display:inline-flex;align-items:center;gap:10px;color:var(--banner-ink);font-size:14px;line-height:1.6;border-bottom:1px solid var(--banner-line);padding-bottom:6px}
+.v14-product-art{position:relative;width:min(300px,100%);aspect-ratio:1;justify-self:center;align-self:center}
+.v14-product-art .product-emblem{filter:drop-shadow(0 20px 26px #0005)}
+.v14-product-banner-light .product-emblem{filter:drop-shadow(0 20px 26px #1f4b7229)}
+.bvi-product-art{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:380px}.bvi-product-mark{width:min(290px,70vw);height:auto;filter:drop-shadow(0 25px 25px #1f4b7229)}.bvi-mark-caption{text-align:center;display:grid;gap:8px}.bvi-mark-caption span{font-size:18px;letter-spacing:.08em;color:#193e6f}.bvi-mark-caption strong{font-size:12px;color:#47729c}.bvi-mark-caption small{font-size:11px;color:#7f9bb7}
+@media(max-width:760px){
+ .v9-home-products{padding:60px 0}
+ .v14-product-banner{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;gap:28px;padding:30px 25px;border-radius:24px;min-height:0;align-items:start}
+ .v14-product-art{grid-row:1;width:min(190px,100%)}
+ .v14-product-copy h3{font-size:32px;margin-top:20px}
+ .v14-product-copy .v14-product-name{font-size:14px}
+ .v14-product-network{font-size:12px}
+ .bvi-product-art{min-height:300px}
+}
+@media(prefers-reduced-motion:reduce){.v14-product-banner{transition:none}}
+
+/* V12 brand line: two lines on desktop, three on compact screens. */
+.brand-hero .brand-copy h1.brand-slogan{font-size:clamp(40px,4.2vw,64px);line-height:1.12;letter-spacing:-.045em}
+.brand-slogan-lead,.brand-slogan em{display:block;white-space:nowrap}
+.footer-brand p.footer-slogan{max-width:330px;font-size:14px;line-height:1.6;letter-spacing:-.01em}
+@media(max-width:600px){
+ .brand-hero .brand-copy h1.brand-slogan{font-size:clamp(38px,10.8vw,56px);line-height:1.1;letter-spacing:-.035em}
+ .brand-slogan-lead>span{display:block}
+}
+
+/* V14 uses the same approved English introduction in both editions. */
+.brand-hero .brand-copy{min-width:0}
+.brand-introduction{max-width:560px}
+.brand-hero .brand-copy .brand-description{max-width:550px;margin:0;font-size:18px;font-weight:400;line-height:1.8;color:#36556f}
+@media(max-width:600px){
+ .brand-hero .brand-copy .brand-description{font-size:16px;line-height:1.8}
+}

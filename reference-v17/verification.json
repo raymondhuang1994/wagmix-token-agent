@@ -1,0 +1,34 @@
+{
+  "version": "V17",
+  "date": "2026-11-04",
+  "checks": {
+    "bilingual_route_cases": 172,
+    "geo_assertions": 97,
+    "source_and_built_outputs_identical": true,
+    "whitepaper_original_and_52_sections_preserved": true,
+    "original_logo_paths_and_gradients_preserved": true,
+    "exact_approved_home_introduction_preserved": true,
+    "browser_visual_validation": "not performed; local browser access unavailable",
+    "localized_home_and_footer_copy": true,
+    "hero_decorative_location_strip_removed": true,
+    "product_content_and_downloads_unchanged_from_V16": true
+  },
+  "geo": {
+    "mode": "preview",
+    "restrictedCountries": [
+      "US"
+    ],
+    "liveIPDetection": false,
+    "serverEnforcementVerified": false
+  },
+  "sha256": {
+    "index.html": "c90a7391e0ddad47fad1f11b30289bdffc36876c0e169a7980f2eb04560363c0",
+    "WAGMIx_繁體中文_V17.html": "c90a7391e0ddad47fad1f11b30289bdffc36876c0e169a7980f2eb04560363c0",
+    "WAGMIx_English_V17.html": "306e8f913e6d7c5cc608b9ee5afdfe3c78774c586065fd89d71a2f9732fb80de",
+    "assets/wagmix.svg": "8ca149b495c0b591987fb673faa4139650032c0dd817637f134e708600857bb4",
+    "assets/wagmix-light.svg": "584db71b335a3250966a6a07c50f1945d6ba7501c496609475c9355d5a158a36",
+    "downloads/WAGMIx_SKHY2Lw_Whitepaper_EN.pdf": "e3c70cbced396e46ee04d9a4afe4081ddfd28dbc3fe2310b071ca05cfaee8b0a",
+    "downloads/WAGMIx_7709_Factsheet_EN_Hum_Revised.pdf": "68a51d37c1d9003e97b1680213295815fc33a746273e27183f899c1fb037849c",
+    "downloads/WAGMIx_7709_產品單頁_繁體中文_Hum_Revised.pdf": "48551e8557bbb9f96e79deae44ec436672c7af6d8436535fa5c4a9a4d585ce7a"
+  }
+}
